@@ -1,0 +1,14 @@
+{
+  "name": "test-release",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "@testRelease/components": "../../libs/components",
+    "@testRelease/utils": "../../libs/utils"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
