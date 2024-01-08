@@ -1,12 +1,12 @@
 {
   "name": "test-release",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "@testRelease/components": "../../libs/components",
-    "@testRelease/utils": "../../libs/utils"
+    "@testRelease/components": "0.1.0",
+    "@testRelease/utils": "0.1.0"
   },
   "keywords": [],
   "author": "",
