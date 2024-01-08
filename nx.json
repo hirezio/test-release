@@ -1,5 +1,17 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "release": {
+    "projectsRelationship": "independent",
+    "projects": ["*", "!@test-release/source"],
+    "version": {
+      "generatorOptions": {
+        // "currentVersionResolver": "disk",
+        "currentVersionResolver": "git-tag",
+        "git-commit": false,
+        "specifierSource": "conventional-commits"
+      }
+    }
+  },
   "targetDefaults": {
     "build": {
       "cache": true,
