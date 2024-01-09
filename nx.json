@@ -2,16 +2,22 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "release": {
     "projects": ["libs/*", "!@test-release/source"],
+    "releaseTagPattern": "{version}",
     "version": {
-      "generatorOptions": {
-        "currentVersionResolver": "git-tag",
-        "git-tag": true,
-        "git-commit": true
-      }
+      "generatorOptions": {}
     },
-    "changelog": {}
+    "changelog": {
+      "workspaceChangelog": {
+        "createRelease": "github"
+      }
+    }
   },
   "targetDefaults": {
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/packages/{projectName}"
+      }
+    },
     "build": {
       "cache": true,
       "dependsOn": ["^build"],

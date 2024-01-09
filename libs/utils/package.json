@@ -1,6 +1,9 @@
 {
-  "name": "@testRelease/utils",
-  "version": "0.1.0",
+  "name": "@releaseExperiments/utils",
+  "version": "0.1.2",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {},
   "main": "./index.js",
   "module": "./index.mjs",
