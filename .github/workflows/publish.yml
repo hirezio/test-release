@@ -36,6 +36,12 @@ jobs:
         shell: bash
         run: pnpm install --frozen-lockfile
 
+      - name: Check Authentication with Registry
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        shell: bash
+        run: npm whoami
+
       - name: Issue a new version
         run: pnpm nx release version ${{ github.event.inputs.version }}
 
@@ -45,5 +51,6 @@ jobs:
 
       - name: Publish
         run: pnpm nx release publish
+        shell: bash
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
