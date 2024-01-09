@@ -3,9 +3,6 @@
   "release": {
     "projects": ["libs/*", "!@test-release/source"],
     "releaseTagPattern": "{version}",
-    "version": {
-      "generatorOptions": {}
-    },
     "changelog": {
       "workspaceChangelog": {
         "createRelease": "github"
