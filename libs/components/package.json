@@ -1,6 +1,6 @@
 {
   "name": "@release-experiments/components",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "publishConfig": {
     "access": "public"
   },
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "tslib": "^2.3.0",
-    "@release-experiments/utils": "0.1.2"
+    "@release-experiments/utils": "0.0.1"
   },
   "sideEffects": false
 }

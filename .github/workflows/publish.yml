@@ -36,12 +36,12 @@ jobs:
         shell: bash
         run: pnpm install --frozen-lockfile
 
+      - name: Issue a new version
+        run: pnpm nx release version ${{ github.event.inputs.version }}
+
       - name: Build
         shell: bash
         run: pnpm nx run-many --target=build
-
-      - name: Issue a new version
-        run: pnpm nx release version ${{ github.event.inputs.version }}
 
       - name: Publish
         run: pnpm nx release publish

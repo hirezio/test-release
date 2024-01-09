@@ -11,9 +11,12 @@
         "outputPath": "dist/libs/utils"
       }
     },
-    "publish": {
-      "command": "node tools/scripts/publish.mjs utils {args.ver} {args.tag}",
-      "dependsOn": ["build"]
+
+    "version-publish": {
+      "options": {
+        "noVerify": true,
+        "push": true
+      }
     },
     "test": {
       "executor": "@nx/vite:test",
