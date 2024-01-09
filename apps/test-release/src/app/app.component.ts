@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ComponentsComponent } from '@releaseExperiments/components';
-import { utils } from '@releaseExperiments/utils';
+import { ComponentsComponent } from '@release-experiments/components';
+import { utils } from '@release-experiments/utils';
 import { NxWelcomeComponent } from './nx-welcome.component';
 
 @Component({

@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "@releaseExperiments/components": "0.1.0",
-    "@releaseExperiments/utils": "0.1.0"
+    "@release-experiments/components": "0.1.0",
+    "@release-experiments/utils": "0.1.0"
   },
   "keywords": [],
   "author": "",

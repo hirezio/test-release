@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@releaseExperiments/components": ["libs/components/src/index.ts"],
-      "@releaseExperiments/utils": ["libs/utils/src/index.ts"]
+      "@release-experiments/components": ["libs/components/src/index.ts"],
+      "@release-experiments/utils": ["libs/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
