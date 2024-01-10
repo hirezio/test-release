@@ -1,5 +1,15 @@
 # @release-experiments/utils
 
+## 0.0.10
+
+### Patch Changes
+
+- feat: added the collapse component (by [@shairez](https://github.com/shairez) in [#12](https://github.com/hirezio/test-release/pull/12))
+
+  ```
+  <collapse isOpen={}>
+  ```
+
 ## 0.0.9
 
 ### Patch Changes
