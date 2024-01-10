@@ -1,11 +1,11 @@
 {
   "name": "@release-experiments/components",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@release-experiments/utils": "0.0.6"
+    "@release-experiments/utils": "0.0.7"
   },
   "type": "module",
   "main": "./index.cjs",
