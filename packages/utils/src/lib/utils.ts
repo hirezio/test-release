@@ -1,3 +1,3 @@
 export function utils(): string {
-  return 'utils' + 5;
+  return 'utils' + 6;
 }
