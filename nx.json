@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "release": {
-    "projects": ["libs/*", "!@test-release/source"],
+    "projects": ["packages/*", "!@test-release/source"],
     "releaseTagPattern": "{version}",
     "changelog": {
       "workspaceChangelog": {
@@ -12,7 +12,7 @@
   "targetDefaults": {
     "nx-release-publish": {
       "options": {
-        "packageRoot": "dist/libs/{projectName}",
+        "packageRoot": "dist/packages/{projectName}",
         "tag": "latest"
       }
     },

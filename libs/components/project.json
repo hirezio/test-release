@@ -1,7 +1,7 @@
 {
   "name": "components",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/components/src",
+  "sourceRoot": "packages/components/src",
   "tags": [],
   "projectType": "library",
   "targets": {
@@ -9,7 +9,7 @@
       "executor": "@nx/vite:build",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs/components",
+        "outputPath": "dist/packages/components",
         "emptyOutDir": true
       }
     },

@@ -42,15 +42,18 @@ jobs:
         shell: bash
         run: npm whoami
 
-      - name: Issue a new version
-        run: pnpm nx release version ${{ github.event.inputs.version }}
+      # - name: Issue a new version
+      #   run: pnpm nx release version ${{ github.event.inputs.version }}
 
-      - name: Build
-        shell: bash
-        run: pnpm nx run-many --target=build
+      # - name: Build
+      #   shell: bash
+      #   run: pnpm nx run-many --target=build
 
-      - name: Publish
-        run: pnpm nx release publish
-        shell: bash
+      - name: Create Release Pull Request or Publish
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: pnpm run release
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
