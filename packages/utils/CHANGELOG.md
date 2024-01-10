@@ -1,5 +1,11 @@
 # @release-experiments/utils
 
+## 0.0.5
+
+### Patch Changes
+
+- [#3](https://github.com/hirezio/test-release/pull/3) [`efe4560`](https://github.com/hirezio/test-release/commit/efe4560b6d790b072010643fbded6e264923483c) Thanks [@shairez](https://github.com/shairez)! - update to 6
+
 ## 0.0.4
 
 ### Patch Changes
