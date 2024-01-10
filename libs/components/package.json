@@ -4,6 +4,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "dependencies": {
+    "@release-experiments/utils": "workspace:*"
+  },
   "type": "module",
   "main": "./index.cjs",
   "module": "./index.js",
