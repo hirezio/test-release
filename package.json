@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "build.changelog-formatter": "tsc .changeset/changelog-github-custom.ts",
     "changeset": "changeset",
     "changeset.version": "changeset version && pnpm install --no-frozen-lockfile && git add --all",
     "release.prepare": "nx run-many --target=build --all --parallel",

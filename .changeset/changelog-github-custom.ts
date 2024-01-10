@@ -69,7 +69,7 @@ const changelogFunctions: ChangelogFunctions = {
 
     const [firstLine, ...futureLines] = replacedChangelog
       .split('\n')
-      .map((l) => l.trimRight());
+      .map((l) => l.trimEnd());
 
     const links = await (async () => {
       if (prFromSummary !== undefined) {
@@ -110,13 +110,20 @@ const changelogFunctions: ChangelogFunctions = {
           .join(', ')
       : links.user;
 
+    let suffix = '';
+    if (links.pull || links.commit || users) {
+      suffix = `(${users ? `by ${users} ` : ''}in ${
+        links.pull || links.commit
+      }`;
+    }
+
     const prefix = [
       links.pull === null ? '' : ` ${links.pull}`,
       links.commit === null ? '' : ` ${links.commit}`,
       users === null ? '' : ` Thanks ${users}!`,
     ].join('');
 
-    return `\n\n-${prefix ? `${prefix} -` : ''} ${firstLine}\n${futureLines
+    return `\n\n- ${firstLine} ${suffix}\n${futureLines
       .map((l) => `  ${l}`)
       .join('\n')}`;
   },
