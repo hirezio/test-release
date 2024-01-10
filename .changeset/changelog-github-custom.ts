@@ -122,7 +122,7 @@ const changelogFunctions: ChangelogFunctions = {
       .replace('FIX:', '🐞🩹')
       .replace('DOCS:', '📃');
 
-    return `\n\n- ${firstLine} ${suffix}\n${futureLines
+    return `\n\n- ${emojiFirstline} ${suffix}\n${futureLines
       .map((l) => `  ${l}`)
       .join('\n')}`;
   },

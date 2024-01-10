@@ -99,7 +99,7 @@ var changelogFunctions = {
         });
     }); },
     getReleaseLine: function (changeset, type, options) { return __awaiter(void 0, void 0, void 0, function () {
-        var prFromSummary, commitFromSummary, usersFromSummary, replacedChangelog, _a, firstLine, futureLines, links, users, suffix;
+        var prFromSummary, commitFromSummary, usersFromSummary, replacedChangelog, _a, firstLine, futureLines, links, users, suffix, emojiFirstline;
         return __generator(this, function (_b) {
             switch (_b.label) {
                 case 0:
@@ -174,7 +174,11 @@ var changelogFunctions = {
                     if (links.pull || links.commit || users) {
                         suffix = "(".concat(users ? "by ".concat(users, " ") : '', "in ").concat(links.pull || links.commit, ")");
                     }
-                    return [2 /*return*/, "\n\n- ".concat(firstLine, " ").concat(suffix, "\n").concat(futureLines
+                    emojiFirstline = firstLine
+                        .replace('FEAT:', '✨ ')
+                        .replace('FIX:', '🐞🩹')
+                        .replace('DOCS:', '📃');
+                    return [2 /*return*/, "\n\n- ".concat(emojiFirstline, " ").concat(suffix, "\n").concat(futureLines
                             .map(function (l) { return "  ".concat(l); })
                             .join('\n'))];
             }
