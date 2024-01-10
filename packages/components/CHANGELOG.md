@@ -1,5 +1,12 @@
 # @release-experiments/components
 
+## 0.0.14
+
+### Patch Changes
+
+- Updated dependencies [[`ce1514f`](https://github.com/hirezio/test-release/commit/ce1514f2bdc03e79df10e0f70f03dcff05aeab42)]:
+  - @release-experiments/utils@0.0.10
+
 ## 0.0.13
 
 ### Patch Changes
