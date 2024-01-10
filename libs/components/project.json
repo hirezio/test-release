@@ -2,25 +2,16 @@
   "name": "components",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/components/src",
-  "prefix": "test-release",
   "tags": [],
   "projectType": "library",
   "targets": {
     "build": {
-      "executor": "@nx/angular:package",
-      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
       "options": {
-        "project": "libs/components/ng-package.json"
-      },
-      "configurations": {
-        "production": {
-          "tsConfig": "libs/components/tsconfig.lib.prod.json"
-        },
-        "development": {
-          "tsConfig": "libs/components/tsconfig.lib.json"
-        }
-      },
-      "defaultConfiguration": "production"
+        "outputPath": "dist/libs/components",
+        "emptyOutDir": true
+      }
     },
     "lint": {
       "executor": "@nx/eslint:lint",

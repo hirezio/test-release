@@ -7,7 +7,7 @@ import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
   root: __dirname,
-  cacheDir: '../../node_modules/.vite/libs/utils',
+  cacheDir: '../../node_modules/.vite/libs/components',
 
   plugins: [
     nxViteTsPaths(),
@@ -32,7 +32,7 @@ export default defineConfig({
   // Configuration for building your library.
   // See: https://vitejs.dev/guide/build.html#library-mode
   build: {
-    outDir: '../../dist/libs/utils',
+    outDir: '../../dist/libs/components',
     reportCompressedSize: true,
     commonjsOptions: {
       transformMixedEsModules: true,
@@ -40,7 +40,7 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points.
       entry: 'src/index.ts',
-      name: 'utils',
+      name: 'components',
       fileName: 'index',
       // Change this to the formats you want to support.
       // Don't forget to update your package.json as well.
@@ -62,7 +62,7 @@ export default defineConfig({
 
     reporters: ['default'],
     coverage: {
-      reportsDirectory: '../../coverage/libs/utils',
+      reportsDirectory: '../../coverage/libs/components',
       provider: 'v8',
     },
   },

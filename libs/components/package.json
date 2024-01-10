@@ -1,16 +1,11 @@
 {
   "name": "@release-experiments/components",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "publishConfig": {
     "access": "public"
   },
-  "peerDependencies": {
-    "@angular/common": "^17.0.0",
-    "@angular/core": "^17.0.0"
-  },
-  "dependencies": {
-    "tslib": "^2.3.0",
-    "@release-experiments/utils": "0.0.1"
-  },
-  "sideEffects": false
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "typings": "./index.d.ts"
 }

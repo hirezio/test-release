@@ -1,11 +1,12 @@
 {
   "name": "@release-experiments/utils",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "publishConfig": {
     "access": "public"
   },
+  "type": "module",
   "dependencies": {},
-  "main": "./index.js",
-  "module": "./index.mjs",
+  "main": "./index.cjs",
+  "module": "./index.js",
   "typings": "./index.d.ts"
 }
