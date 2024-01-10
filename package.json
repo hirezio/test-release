@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "changeset": "changeset",
-    "changeset.version": "changeset version && pnpm i && git add --all",
+    "changeset.version": "changeset version && pnpm install --no-frozen-lockfile && git add --all",
     "release.prepare": "nx run-many --target=build --all --parallel",
     "release.setroot": "mv pnpm-workspace.yaml dist/pnpm-workspace.yaml && cp pnpm-workspace-for-release.yaml pnpm-workspace.yaml",
     "release": "pnpm release.prepare && pnpm release.setroot && pnpm release.publish && pnpm release.resetroot",
