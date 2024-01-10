@@ -1,5 +1,5 @@
 ---
-'@release-experiments/utils': patch
+'@release-experiments/utils': major
 ---
 
 feat: added the collapse component
