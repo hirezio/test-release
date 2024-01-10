@@ -6,7 +6,7 @@
     "changeset": "changeset",
     "release.prepare": "nx run-many --target=build --all --parallel",
     "release.setroot": "mv pnpm-workspace.yaml pnpm-workspace.yaml-backup && cp pnpm-workspace-for-release.yaml pnpm-workspace.yaml",
-    "release": "pnpm release.prepare && release.setroot && release.publish && release.resetroot",
+    "release": "pnpm release.prepare && pnpm release.setroot && pnpm release.publish && pnpm release.resetroot",
     "release.publish": "nx changeset publish",
     "release.resetroot": "mv pnpm-workspace.yaml-backup pnpm-workspace.yaml"
   },
