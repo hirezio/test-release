@@ -1,5 +1,22 @@
 # @release-experiments/utils
 
+## 0.0.9
+
+### Patch Changes
+
+- 🐞🩹 patch not working (by [@shairez](https://github.com/shairez) in [#9](https://github.com/hirezio/test-release/pull/9))
+
+- 🐞🩹 this fixes #11 (by [@shairez](https://github.com/shairez) in [`4de4c36`](https://github.com/hirezio/test-release/commit/4de4c36fff16396f76269ddeb1420d727f93f035))
+
+- 📃 button (by [@shairez](https://github.com/shairez) in [#9](https://github.com/hirezio/test-release/pull/9))
+
+- #### Fixed Versions (by [@shairez](https://github.com/shairez) in [#9](https://github.com/hirezio/test-release/pull/9))
+
+  No more old changesets
+  Now it's the new deal
+
+- ✨ added one or two things (by [@shairez](https://github.com/shairez) in [#9](https://github.com/hirezio/test-release/pull/9))
+
 ## 0.0.8
 
 ### Patch Changes

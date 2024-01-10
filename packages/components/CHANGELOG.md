@@ -1,5 +1,12 @@
 # @release-experiments/components
 
+## 0.0.13
+
+### Patch Changes
+
+- Updated dependencies [[`8f91b85`](https://github.com/hirezio/test-release/commit/8f91b8591607818d9ae896948269864e8e728d1e), [`4de4c36`](https://github.com/hirezio/test-release/commit/4de4c36fff16396f76269ddeb1420d727f93f035), [`8f91b85`](https://github.com/hirezio/test-release/commit/8f91b8591607818d9ae896948269864e8e728d1e), [`8f91b85`](https://github.com/hirezio/test-release/commit/8f91b8591607818d9ae896948269864e8e728d1e), [`8f91b85`](https://github.com/hirezio/test-release/commit/8f91b8591607818d9ae896948269864e8e728d1e)]:
+  - @release-experiments/utils@0.0.9
+
 ## 0.0.12
 
 ### Patch Changes
