@@ -1,5 +1,15 @@
 # @release-experiments/components
 
+## 0.0.12
+
+### Patch Changes
+
+- 🐛 fix: I love these changelogs (by [@shairez](https://github.com/shairez) in [`01d4956`](https://github.com/hirezio/test-release/commit/01d495617729e1acd85a8a120af9eac8b2131d0b)
+
+  ### Here is another line
+
+  In case you wanted to see how it is
+
 ## 0.0.11
 
 ### Patch Changes
