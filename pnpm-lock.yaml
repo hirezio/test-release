@@ -94,9 +94,13 @@ importers:
         specifier: ~0.34.6
         version: 0.34.6(@vitest/ui@0.34.7)
 
-  libs/components: {}
+  packages/components:
+    dependencies:
+      '@release-experiments/utils':
+        specifier: 0.0.4
+        version: link:../utils
 
-  libs/utils: {}
+  packages/utils: {}
 
 packages:
 

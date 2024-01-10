@@ -5,10 +5,10 @@
   "scripts": {
     "changeset": "changeset",
     "release.prepare": "nx run-many --target=build --all --parallel",
-    "release.setroot": "mv pnpm-workspace.yaml pnpm-workspace.yaml-backup && cp pnpm-workspace-for-release.yaml pnpm-workspace.yaml",
+    "release.setroot": "mv pnpm-workspace.yaml dist/pnpm-workspace.yaml && cp pnpm-workspace-for-release.yaml pnpm-workspace.yaml",
     "release": "pnpm release.prepare && pnpm release.setroot && pnpm release.publish && pnpm release.resetroot",
     "release.publish": "changeset publish",
-    "release.resetroot": "mv pnpm-workspace.yaml-backup pnpm-workspace.yaml"
+    "release.resetroot": "cp dist/pnpm-workspace.yaml pnpm-workspace.yaml"
   },
   "private": true,
   "dependencies": {

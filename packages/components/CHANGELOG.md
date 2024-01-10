@@ -1,5 +1,17 @@
 # @release-experiments/components
 
+## 0.0.6
+
+### Patch Changes
+
+- updated deps
+
+## 0.0.5
+
+### Patch Changes
+
+- 0290476: updated deps
+
 ## 0.0.4
 
 ### Patch Changes
