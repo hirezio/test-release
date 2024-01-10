@@ -1,5 +1,11 @@
 # @release-experiments/components
 
+## 0.0.7
+
+### Patch Changes
+
+- [`f8a6d34`](https://github.com/hirezio/test-release/commit/f8a6d34c4f9a0ca6c6b168b5d400a0df3c6f4ae7) Thanks [@shairez](https://github.com/shairez)! - updated deps
+
 ## 0.0.6
 
 ### Patch Changes
