@@ -1,5 +1,12 @@
 # @release-experiments/components
 
+## 0.0.11
+
+### Patch Changes
+
+- Updated dependencies [[`fc4bbfb`](https://github.com/hirezio/test-release/commit/fc4bbfbd83b3bdbf6ccb6c2e98e60e8cea713f0d)]:
+  - @release-experiments/utils@0.0.8
+
 ## 0.0.10
 
 ### Patch Changes
