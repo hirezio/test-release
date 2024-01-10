@@ -1,16 +1,11 @@
 name: publish
 
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'Version to publish'
-        required: true
-        type: choice
-        options:
-          - 'patch'
-          - 'minor'
-        default: 'patch'
+  push:
+    branches:
+      - main
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   publish:
