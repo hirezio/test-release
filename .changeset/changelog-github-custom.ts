@@ -67,9 +67,19 @@ const changelogFunctions: ChangelogFunctions = {
       })
       .trim();
 
+    const linkifyIssueHints = (line: string) =>
+      line.replace(
+        /(?<=\( ?(?:fix|fixes|see) )(#\d+)(?= ?\))/g,
+        (issueHash) => {
+          return `[${issueHash}](https://github.com/${
+            options.repo
+          }/issues/${issueHash.substring(1)})`;
+        }
+      );
+
     const [firstLine, ...futureLines] = replacedChangelog
       .split('\n')
-      .map((l) => l.trimEnd());
+      .map((l) => linkifyIssueHints(l.trimEnd()));
 
     const links = await (async () => {
       if (prFromSummary !== undefined) {

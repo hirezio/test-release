@@ -99,7 +99,7 @@ var changelogFunctions = {
         });
     }); },
     getReleaseLine: function (changeset, type, options) { return __awaiter(void 0, void 0, void 0, function () {
-        var prFromSummary, commitFromSummary, usersFromSummary, replacedChangelog, _a, firstLine, futureLines, links, users, suffix, emojiFirstline;
+        var prFromSummary, commitFromSummary, usersFromSummary, replacedChangelog, linkifyIssueHints, _a, firstLine, futureLines, links, users, suffix, emojiFirstline;
         return __generator(this, function (_b) {
             switch (_b.label) {
                 case 0:
@@ -123,9 +123,14 @@ var changelogFunctions = {
                         return '';
                     })
                         .trim();
+                    linkifyIssueHints = function (line) {
+                        return line.replace(/(?<=\( ?(?:fix|fixes|see) )(#\d+)(?= ?\))/g, function (issueHash) {
+                            return "[".concat(issueHash, "](https://github.com/").concat(options.repo, "/issues/").concat(issueHash.substring(1), ")");
+                        });
+                    };
                     _a = replacedChangelog
                         .split('\n')
-                        .map(function (l) { return l.trimEnd(); }), firstLine = _a[0], futureLines = _a.slice(1);
+                        .map(function (l) { return linkifyIssueHints(l.trimEnd()); }), firstLine = _a[0], futureLines = _a.slice(1);
                     return [4 /*yield*/, (function () { return __awaiter(void 0, void 0, void 0, function () {
                             var links_1, shortCommitId, commitToFetchFrom, links_2;
                             return __generator(this, function (_a) {
