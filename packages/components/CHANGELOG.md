@@ -1,5 +1,14 @@
 # @release-experiments/components
 
+## 0.0.8
+
+### Patch Changes
+
+- [#3](https://github.com/hirezio/test-release/pull/3) [`93e36e0`](https://github.com/hirezio/test-release/commit/93e36e0d865bb6fad6815f5f8512580633de0f16) Thanks [@shairez](https://github.com/shairez)! - test 6
+
+- Updated dependencies [[`efe4560`](https://github.com/hirezio/test-release/commit/efe4560b6d790b072010643fbded6e264923483c)]:
+  - @release-experiments/utils@0.0.5
+
 ## 0.0.7
 
 ### Patch Changes
