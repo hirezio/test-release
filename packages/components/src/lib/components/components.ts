@@ -1,3 +1,3 @@
 export function components(): string {
-  return 'components' + 5;
+  return 'components' + 6;
 }
