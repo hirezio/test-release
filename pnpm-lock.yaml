@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 importers:
 
   .:
@@ -97,7 +93,7 @@ importers:
   packages/components:
     dependencies:
       '@release-experiments/utils':
-        specifier: 0.0.6
+        specifier: 0.0.7
         version: link:../utils
 
   packages/utils: {}
@@ -8017,3 +8013,7 @@ packages:
     optionalDependencies:
       commander: 9.5.0
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false

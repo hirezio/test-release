@@ -1,5 +1,11 @@
 # @release-experiments/utils
 
+## 0.0.7
+
+### Patch Changes
+
+- [`c0f8d58`](https://github.com/hirezio/test-release/commit/c0f8d58704eefc4721922fed107cf7464298d40b) Thanks [@shairez](https://github.com/shairez)! - up 8
+
 ## 0.0.6
 
 ### Patch Changes
