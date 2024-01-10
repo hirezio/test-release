@@ -114,14 +114,13 @@ const changelogFunctions: ChangelogFunctions = {
     if (links.pull || links.commit || users) {
       suffix = `(${users ? `by ${users} ` : ''}in ${
         links.pull || links.commit
-      }`;
+      })`;
     }
 
-    const prefix = [
-      links.pull === null ? '' : ` ${links.pull}`,
-      links.commit === null ? '' : ` ${links.commit}`,
-      users === null ? '' : ` Thanks ${users}!`,
-    ].join('');
+    const emojiFirstline = firstLine
+      .replace('FEAT:', '✨ ')
+      .replace('FIX:', '🐞🩹')
+      .replace('DOCS:', '📃');
 
     return `\n\n- ${firstLine} ${suffix}\n${futureLines
       .map((l) => `  ${l}`)
