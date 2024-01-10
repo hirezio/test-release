@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "changeset": "changeset",
     "release.prepare": "nx run-many --target=build --all --parallel",
     "release.setroot": "mv pnpm-workspace.yaml pnpm-workspace.yaml-backup && cp pnpm-workspace-for-release.yaml pnpm-workspace.yaml",
     "release": "pnpm release.prepare && release.setroot && release.publish && release.resetroot",
