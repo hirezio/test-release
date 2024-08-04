@@ -1,5 +1,12 @@
 # @release-experiments/components
 
+## 0.0.16-alpha.0
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @release-experiments/utils@1.0.0-alpha.0
+
 ## 0.0.15
 
 ### Patch Changes

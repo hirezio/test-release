@@ -1,0 +1,11 @@
+{
+  "mode": "pre",
+  "tag": "alpha",
+  "initialVersions": {
+    "@release-experiments/components": "0.0.14",
+    "@release-experiments/utils": "0.0.10"
+  },
+  "changesets": [
+    "three-boats-cross"
+  ]
+}
