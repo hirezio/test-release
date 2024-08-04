@@ -5,5 +5,7 @@
     "@release-experiments/components": "0.0.14",
     "@release-experiments/utils": "0.0.10"
   },
-  "changesets": []
+  "changesets": [
+    "three-boats-cross"
+  ]
 }
